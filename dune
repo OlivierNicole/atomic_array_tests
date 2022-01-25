@@ -1,0 +1,9 @@
+(executable
+ (name unit)
+ (modules unit)
+ (flags (:standard -g))
+;; (libraries util qcheck lin CList lockfree)
+ (libraries qcheck)
+;; (preprocess (pps ppx_deriving_qcheck ppx_deriving.show))
+ (modes byte exe)
+)
